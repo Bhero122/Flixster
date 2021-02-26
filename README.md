@@ -1,9 +1,8 @@
 # Flixster
 Flixster is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
 
-## Flix Part 2
+## Flixster Part 2
 
 ### User Stories
 
@@ -25,7 +24,7 @@ Flixster is an app that allows users to browse movies from the [The Movie Databa
 ### App Walkthough GIF
 
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://github.com/Bhero122/Flixster/blob/master/FlixsterWalkthrough2.gif" width=250><br>
 
 ### Notes
 
