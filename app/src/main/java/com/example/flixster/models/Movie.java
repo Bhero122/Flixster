@@ -3,15 +3,24 @@ package com.example.flixster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie {
     String posterPath;
     String title;
     String overview;
     String backdropPath;
+    double rating;
+    int movieID;
+
+    // empty constructor needed by the Parceler Library
+    public Movie() {
+
+    }
 
     //constructor to construct movie object from json object
     //JSONException activates if posterPath and other 2 fail
@@ -20,6 +29,8 @@ public class Movie {
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         backdropPath = jsonObject.getString("backdrop_path");
+        rating = jsonObject.getDouble("vote_average");
+        movieID = jsonObject.getInt("id");
     }
 
     // method to go through array & construct a movie for each element in the array
@@ -67,5 +78,13 @@ public class Movie {
 
     public String getBackdropPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath);
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public int getMovieID() {
+        return movieID;
     }
 }
